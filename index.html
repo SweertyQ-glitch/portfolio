@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+    <div class="background-overlay"></div>
+
+    <header class="navbar glass">
+        <a href="#" class="logo">₊˚⊹♡✦˚ ༘♡ ⋆｡˚ ❀✧｡･:*˚:✧｡₊˚⊹♡୨୧｡･:*˚:✧｡₊˚⊹♡✦˚ ༘♡ ⋆｡˚ ❀✧｡･:*˚:✧<span>.</span></a>
+
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#projects">Проекты</a>
+            <a href="#socials">Соцсети</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="about">
+
+            <div class="hero-text">
+                <p class="eyebrow">WELCOME TO MY SPACE</p>
+
+                <h1 class="hero-title">
+                    Hello, I'm<br>
+                    <span>SweertyQ.</span>
+                </h1>
+
+                <p class="description">
+                    Меня зовут Юля, я студентка Колледжа проф.образования ПГНИУ.
+                    Учусь на специальности информационные системы и программирование.
+                    Создаю цифровые проекты, изучаю технологии
+                    и превращаю идеи в реальность.
+                </p>
+
+                <p class="description">
+                    Это мой сайт-портфолио ୨୧<br>
+                    Здесь будут мои проекты, идеи и соцсети.
+                </p>
+
+                <div class="buttons">
+                    <a href="#projects" class="button button-dark">
+                        Мои проекты ↗
+                    </a>
+
+                    <a href="#socials" class="button button-light">
+                        Мои соцсети
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-side">
+
+                <div class="profile-card glass">
+                    <div class="profile-frame">
+                        <img
+                        class="chrome-object"
+                        src="images/chrome-object.png"
+                        alt="Хромированный 3D-объект"
+>
+                    </div>
+
+                    <p class="profile-caption">୨୧・┈┈・┈┈・୨୧・┈┈・┈┈・୨୧</p>
+                    <h2>Nice to meet you.</h2>
+                </div>
+
+                <div class="info-card glass">
+                    <span class="status-dot"></span>
+                    <span>Currently learning & creating</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="socials-section" id="socials">
+
+            <p class="section-label">FIND ME ONLINE</p>
+            <h2>My socials.</h2>
+
+            <div class="socials-grid">
+
+                <a class="social-card glass"
+                   href="https://github.com/SweertyQ-glitch?tab=repositories"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <div class="social-icon">
+                        <img src="images/socials/github.jpg" alt="GitHub">
+                    </div>
+                    <span>GitHub</span>
+                    <span class="arrow">↗</span>
+                </a>
+
+                <a class="social-card glass"
+                   href="https://telegram.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <div class="social-icon">
+                        <img src="images/socials/telegram.jpg" alt="Telegram">
+                    </div>
+                    <span>Telegram</span>
+                    <span class="arrow">↗</span>
+                </a>
+
+                <a class="social-card glass"
+                   href="https://discord.com/users/966767596596768878"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <div class="social-icon">
+                        <img src="images/socials/discord.jpg" alt="Discord">
+                    </div>
+                    <span>Discord</span>
+                    <span class="arrow">↗</span>
+                </a>
+
+                <a class="social-card glass"
+                   href="https://instagram.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <div class="social-icon">
+                        <img src="images/socials/instagram.jpg" alt="Instagram">
+                    </div>
+                    <span>Instagram</span>
+                    <span class="arrow">↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="projects-section" id="projects">
+
+            <p class="section-label">WHAT I'VE BEEN WORKING ON</p>
+            <h2>Selected projects.</h2>
+
+            <div class="projects-grid">
+
+                <button class="project-card glass"
+                        type="button"
+                        data-modal="modal-wishlist">
+                    <p class="profile-caption">୨୧・┈┈・┈┈・୨୧</p>
+                    <h3>My wishlist</h3>
+                    <p class="project-sub">Android app · нажми, чтобы узнать больше</p>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+   <!-- PREMIUM MUSIC PLAYER -->
+
+<div class="music-player glass" id="music-player">
+
+    <img
+        class="music-cover"
+        src="music/cover.webp"
+        alt="Обложка музыкального трека"
+    >
+
+    <div class="music-info">
+        <span class="music-label">
+            NOW PLAYING
+            <span class="music-equalizer" id="music-equalizer">
+                <i></i><i></i><i></i>
+            </span>
+        </span>
+
+        <p class="track-title" id="track-name">
+            internet shelter
+        </p>
+
+        <p class="track-artist" id="track-artist">
+            akiaura, LONOWN, STM
+        </p>
+    </div>
+
+    <button
+        class="music-control"
+        id="music-button"
+        type="button"
+        aria-label="Включить музыку">
+        <span id="music-button-icon">▶</span>
+    </button>
+
+    <div class="music-progress-area">
+        <span class="music-time" id="music-current-time">0:00</span>
+
+        <input
+            class="music-progress"
+            id="music-progress"
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            step="0.1"
+            aria-label="Позиция воспроизведения"
+        >
+
+        <span class="music-time" id="music-duration">0:00</span>
+    </div>
+
+    <audio id="music" preload="metadata">
+        <source src="music/my-track.mp3" type="audio/mpeg">
+        Твой браузер не поддерживает аудио.
+    </audio>
+
+</div>
+
+    <footer>
+        <p>MADE WITH CURIOSITY © 2026</p>
+    </footer>
+<!-- Всплывающая панель Telegram -->
+<div class="telegram-modal" id="telegram-modal" aria-hidden="true">
+    <div class="telegram-panel glass"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="telegram-title">
+
+        <button class="telegram-close"
+                id="telegram-close"
+                aria-label="Закрыть">
+            &times;
+        </button>
+
+        <p class="section-label">୨୧・┈┈・┈┈・୨୧</p>
+        <h2 id="telegram-title">My Telegram.</h2>
+        <p class="telegram-description">
+            Отсканируй QR-код, чтобы найти меня в Telegram.
+        </p>
+
+        <img
+            class="telegram-qr"
+            src="images/telegram-qr.jpg"
+            alt="QR-код моего Telegram-профиля"
+        >
+
+        <a
+            class="button button-dark telegram-open"
+            href="https://t.me/sweertyy_qz"
+            target="_blank"
+            rel="noopener noreferrer">
+            Открыть Telegram ↗
+        </a>
+
+        <button class="telegram-copy" id="telegram-copy">
+            Скопировать ссылку
+        </button>
+    </div>
+</div>
+<!-- Всплывающая панель проекта: My wishes -->
+<div class="project-modal" id="modal-wishlist" aria-hidden="true">
+    <div class="project-panel glass"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="wishlist-title">
+
+        <button class="project-close" type="button" aria-label="Закрыть">&times;</button>
+
+        <p class="section-label">୨୧・┈┈・┈┈・୨୧</p>
+        <h2 id="wishlist-title">wishé₊˚⊹♡</h2>
+
+        <div class="project-gallery">
+            <img src="images/wishlist/1.png" alt="Иконка приложения wishé₊˚⊹♡" loading="lazy" onerror="this.remove()">
+            <img src="images/wishlist/2.jpg" alt="Главный экран" loading="lazy" onerror="this.remove()">
+        </div>
+
+        <p class="project-description">
+            Android-приложение для списка желаний. Интерфейс сделан на
+            HTML и CSS и работает внутри WebView, а вся логика
+            (переключение экранов, нажатия кнопок) написана на Java
+            в Android Studio. Есть светлая, тёмная и розовая темы.
+        </p>
+
+        <a class="button button-dark project-github"
+           href="https://github.com/SweertyQ-glitch/my-wishes"
+           target="_blank"
+           rel="noopener noreferrer">
+            Открыть на GitHub ↗
+        </a>
+    </div>
+</div>
+
+<!-- CUSTOM GLASS CURSOR -->
+<div class="custom-cursor" id="custom-cursor"></div>
+<div class="cursor-dot" id="cursor-dot"></div>
+    <script src="script.js"></script>
+
+</body>
+</html>
